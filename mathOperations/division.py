@@ -4,5 +4,6 @@ def div(a,b):
     '''
     try:
         return a / b
-    except ZeroDivisionError as e:
-        raise ValueError("can't divde by zero!!!") from e
+    except ZeroDivisionError:
+        raise ValueError("can't divde by zero!!!") 
+        
